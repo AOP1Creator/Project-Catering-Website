@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HardlyTasteworks - Premium Catering Services</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">
+                <span class="brand">HardlyTasteworks</span>
+                <span class="tagline">Premium Catering Services</span>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="nav-pill active">Home</a>
+                <a href="BrowseMenu.html" class="nav-item">Browse Menu</a>
+                <a href="OurTeam.html" class="nav-item">Our Team</a>
+                <a href="layanan.html" class="nav-item">Layanan</a>
+                <a href="testimoni.html" class="nav-item">Testimoni</a>
+            </nav>
+            <div class="header-btns">
+                <a href="https://wa.me/6281995223741?text=Halo%20HardlyTasteworks,%20saya%20tertarik%20untuk%20memesan%20catering." target="_blank" class="btn btn-nav-wa">
+                    <i class="fas fa-phone-alt"></i> Order via WhatsApp
+                </a>
+                <button class="btn btn-nav-orange" onclick="toggleModal(true)">
+                    <i class="fas fa-shopping-cart"></i> Order Online
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container text-center">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i> Premium Catering Services Since 2015
+            </div>
+
+            <h1 class="hero-title">Welcome to <br><span class="highlight">HardlyTasteworks</span></h1>
+
+            <p class="hero-desc">
+                Kami adalah penyedia layanan catering premium yang menghadirkan cita rasa istimewa untuk setiap momen berharga Anda. Dengan pengalaman lebih dari 8 tahun, kami telah melayani ribuan acara dengan standar kualitas tertinggi.
+            </p>
+
+            <div class="stats-row">
+                <div class="stat-item"><h3>8+</h3><p>Tahun Pengalaman</p></div>
+                <div class="stat-item"><h3>5000+</h3><p>Event Sukses</p></div>
+                <div class="stat-item"><h3>4</h3><p>Cabang di Jakarta</p></div>
+                <div class="stat-item"><h3>4.8 <i class="fas fa-star"></i></h3><p>Rating Pelanggan</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES --><!-- SERVICES SECTION -->
+    <section class="services section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="tag">Our Services</span>
+                <h2>Layanan Catering Terbaik</h2>
+                <p>Kami menyediakan berbagai paket catering yang dapat disesuaikan dengan kebutuhan acara Anda.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card s-pink">
+                    <h3>Wedding Party</h3>
+                    <p>Wujudkan pernikahan impian dengan menu elegan dan pelayanan sempurna.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Menu kustom sesuai tema</li>
+                        <li><i class="fas fa-check-circle"></i> Elegant buffet setup</li>
+                        <li><i class="fas fa-check-circle"></i> Chef & waiter profesional</li>
+                    </ul>
+                    <!-- Perbaikan: Menggunakan <a> untuk direct ke page layanan -->
+                    <a href="layanan.html" class="btn btn-orange-card">Lihat Detail</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="service-card s-purple">
+                    <h3>Birthday Party</h3>
+                    <p>Rayakan momen spesial dengan hidangan lezat dan suasana ceria.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Menu anak & dewasa</li>
+                        <li><i class="fas fa-check-circle"></i> Creative presentation</li>
+                        <li><i class="fas fa-check-circle"></i> Custom birthday cake</li>
+                    </ul>
+                    <a href="layanan.html" class="btn btn-orange-card">Lihat Detail</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="service-card s-blue">
+                    <h3>Prasmanan</h3>
+                    <p>Solusi prasmanan untuk acara formal dengan variasi menu lengkap.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> 20+ pilihan menu</li>
+                        <li><i class="fas fa-check-circle"></i> Peralatan lengkap</li>
+                        <li><i class="fas fa-check-circle"></i> Free ongkir area Jakarta</li>
+                    </ul>
+                    <a href="layanan.html" class="btn btn-orange-card">Lihat Detail</a>
+                </div>
+                <!-- Card 4 -->
+                <div class="service-card s-green">
+                    <h3>Box Meal</h3>
+                    <p>Praktis dan higienis untuk acara meeting atau gathering kantor.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Packaging premium</li>
+                        <li><i class="fas fa-check-circle"></i> Minimum order 20 box</li>
+                        <li><i class="fas fa-check-circle"></i> Delivery tepat waktu</li>
+                    </ul>
+                    <a href="layanan.html" class="btn btn-orange-card">Lihat Detail</a>
+                </div>
+                <!-- Card 5 -->
+                <div class="service-card s-beige">
+                    <h3>Private Dining</h3>
+                    <p>Pengalaman bersantap eksklusif bersama chef pribadi di lokasi Anda.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Chef datang ke lokasi</li>
+                        <li><i class="fas fa-check-circle"></i> Fine dining menu</li>
+                        <li><i class="fas fa-check-circle"></i> Intimate experience</li>
+                    </ul>
+                    <a href="layanan.html" class="btn btn-orange-card">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATIONS -->
+    <section class="locations section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="tag">Our Locations</span>
+                <h2>Cabang HardlyTasteworks</h2>
+                <p>Kami hadir di 4 lokasi strategis di Jakarta untuk melayani Anda dengan lebih baik.</p>
+            </div>
+            <div class="location-grid">
+                <!-- Location item template -->
+                <div class="loc-card">
+                    <div class="loc-img" style="background-image: url('Image\ \(HardlyTasteworks\ Central\ Jakarta\).png');">
+                        <div class="rating-badge">⭐ 4.9 (1k+)</div>
+                    </div>
+                    <div class="loc-info">
+                        <h3>HardlyTasteworks Central Jakarta</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Sudirman No. 123, Jakarta Pusat</p>
+                        <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+                        <div class="loc-btns">
+                            <a href="https://wa.me/6281995223741?text=Order%20Jakarta%20Pusat" class="btn btn-loc-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <button onclick="toggleModal(true)" class="btn btn-loc-orange">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other 3 branches with similar structure -->
+                <div class="loc-card">
+                    <div class="loc-img" style="background-image: url('Image\ \(HardlyTasteworks\ South\ Jakarta\).png');">
+                        <div class="rating-badge">⭐ 4.8 (850)</div>
+                    </div>
+                    <div class="loc-info">
+                        <h3>HardlyTasteworks South Jakarta</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. TB Simatupang No. 45, Jakarta Selatan</p>
+                        <p><i class="fas fa-phone"></i> +62 812-3456-7891</p>
+                        <div class="loc-btns">
+                            <a href="https://wa.me/6281995223741" class="btn btn-loc-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <button onclick="toggleModal(true)" class="btn btn-loc-orange">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="loc-card">
+                    <div class="rating-badge">⭐ 4.7 (920)</div>
+                    <div class="loc-img" style="background-image: url('Image\ \(HardlyTasteworks\ West\ Jakarta\).png');">
+                    </div>
+                    <div class="loc-info">
+                        <h3>HardlyTasteworks West Jakarta</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Panjang No. 78, Jakarta Barat</p>
+                        <p><i class="fas fa-phone"></i> +62 812-3456-7892</p>
+                        <div class="loc-btns">
+                            <a href="https://wa.me/6281995223741" class="btn btn-loc-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <button onclick="toggleModal(true)" class="btn btn-loc-orange">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="loc-card">
+                    <div class="loc-img" style="background-image: url('Image\ \(HardlyTasteworks\ East\ Jakarta\).png');">
+                        <div class="rating-badge">⭐ 4.8 (780)</div>
+                    </div>
+                    <div class="loc-info">
+                        <h3>HardlyTasteworks East Jakarta</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Raya Bekasi No. 90, Jakarta Timur</p>
+                        <p><i class="fas fa-phone"></i> +62 812-3456-7893</p>
+                        <div class="loc-btns">
+                            <a href="https://wa.me/6281995223741" class="btn btn-loc-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <button onclick="toggleModal(true)" class="btn btn-loc-orange">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (Sesuai Gambar Detail) -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="f-col about">
+                <h2>HardlyTasteworks</h2>
+                <span class="f-tagline">Premium Catering</span>
+                <p>Penyedia layanan catering premium dengan pengalaman 8+ tahun melayani ribuan acara sukses di Jakarta.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="f-col links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="Index.html">&rarr; Home</a></li>
+                    <li><a href="BrowseMenu.html">&rarr; Browse Menu</a></li>
+                    <li><a href="OurTeam.html">&rarr; Our Team</a></li>
+                    <li><a href="Layanan.html">&rarr; Layanan</a></li>
+                    <li><a href="Testimoni.html">&rarr; Testimoni</a></li>
+                </ul>
+            </div>
+            <div class="f-col svcs">
+                <h4>Our Services</h4>
+                <ul>
+                    <li>Wedding Party Catering</li>
+                    <li>Birthday Party Catering</li>
+                    <li>Prasmanan Catering</li>
+                    <li>Box Meal Catering</li>
+                    <li>Private Dining Experience</li>
+                    <li>Corporate Events</li>
+                </ul>
+            </div>
+            <div class="f-col contact">
+                <h4>Contact Us</h4>
+                <div class="c-item"><i class="fas fa-phone-alt"></i> <span>Customer Service</span><br>+62 812-3456-7890</div>
+                <div class="c-item"><i class="fas fa-envelope"></i> <span>Email</span><br>info@hardlytasteworks.com</div>
+                <div class="c-item"><i class="fas fa-clock"></i> <span>Jam Operasional</span><br>Senin - Minggu 08:00 - 22:00 WIB</div>
+            </div>
+        </div>
+
+        <div class="container branches-footer">
+            <h4 class="title-branches">Our Branches</h4>
+            <div class="bf-grid">
+                <div class="bf-card"><h5>Central Jakarta</h5><p>Jl. Sudirman No. 123, Jakarta Pusat</p><p>+62 812-3456-7890</p></div>
+                <div class="bf-card"><h5>South Jakarta</h5><p>Jl. TB Simatupang No. 45, Jakarta Selatan</p><p>+62 812-3456-7891</p></div>
+                <div class="bf-card"><h5>West Jakarta</h5><p>Jl. Panjang No. 78, Jakarta Barat</p><p>+62 812-3456-7892</p></div>
+                <div class="bf-card"><h5>East Jakarta</h5><p>Jl. Raya Bekasi No. 90, Jakarta Timur</p><p>+62 812-3456-7893</p></div>
+            </div>
+        </div>
+
+        <div class="container newsletter-section text-center">
+            <h4>Subscribe to Our Newsletter</h4>
+            <p>Dapatkan info promo, menu baru, dan tips catering langsung ke email Anda</p>
+            <form class="news-form">
+                <input type="email" placeholder="Enter your email...">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container b-flex">
+                <p>&copy; 2025 HardlyTasteworks. All rights reserved.</p>
+                <div class="legal"><a href="#">Privacy Policy</a> <a href="#">Terms of Service</a> <a href="#">FAQ</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL ORDER FORM -->
+    <div id="orderModal" class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>Form Pemesanan Online</h3>
+                <span class="close-btn" onclick="toggleModal(false)">&times;</span>
+            </div>
+            <form id="cateringForm">
+                <div class="f-group"><label>Nama Lengkap</label><input type="text" id="c-name" required placeholder="Nama Anda"></div>
+                <div class="f-group">
+                    <label>Pilih Layanan</label>
+                    <select id="c-service" required>
+                        <option value="">-- Pilih Layanan --</option>
+                        <option value="Wedding Party">Wedding Party</option>
+                        <option value="Birthday Party">Birthday Party</option>
+                        <option value="Prasmanan">Prasmanan</option>
+                        <option value="Box Meal">Box Meal</option>
+                        <option value="Private Dining">Private Dining</option>
+                    </select>
+                </div>
+                <div class="f-group"><label>Tanggal Acara</label><input type="date" id="c-date" required></div>
+                <div class="f-group"><label>Jumlah Pax</label><input type="number" id="c-pax" required placeholder="Contoh: 100"></div>
+                <div class="f-group"><label>Catatan</label><textarea id="c-note" placeholder="Tambahan detail khusus..."></textarea></div>
+                <button type="submit" class="btn btn-orange-submit">Kirim ke WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="Index.js"></script>
+</body>
+</html>

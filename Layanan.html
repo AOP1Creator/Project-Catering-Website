@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Premium - HardlyTasteworks</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Layanan.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">
+                <span class="brand">HardlyTasteworks</span>
+                <span class="tagline">Premium Catering Services</span>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="BrowseMenu.html" class="nav-item">Browse Menu</a>
+                <a href="OurTeam.html" class="nav-item">Our Team</a>
+                <a href="layanan.html" class="nav-pill active">Layanan</a>
+                <a href="testimoni.html" class="nav-item">Testimoni</a>
+            </nav>
+            <div class="header-btns">
+                <a href="https://wa.me/6281995223741" target="_blank" class="btn btn-nav-wa">
+                    <i class="fas fa-phone-alt"></i> Order via WhatsApp
+                </a>
+                <button class="btn btn-nav-orange" onclick="openOrderModal('Layanan Umum')">
+                    <i class="fas fa-shopping-cart"></i> Order Online
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO LAYANAN -->
+    <section class="hero-sub">
+        <div class="container text-center">
+            <div class="hero-badge">⭐ High-End Catering Solutions</div>
+            <h1 class="hero-title">Layanan Catering <span class="highlight">Premium</span></h1>
+            <p class="hero-desc">Pilihan paket terlengkap dengan standar kualitas bintang lima untuk menyempurnakan setiap momen berharga Anda.</p>
+        </div>
+    </section>
+
+    <!-- DAFTAR LAYANAN (Z-Pattern) -->
+    <section class="container section-padding">
+        
+        <!-- 1. WEDDING -->
+        <div class="l-block s-pink-light">
+            <div class="l-img" style="background-image: url('wedding\ party\ catering.png');"></div>
+            <div class="l-content">
+                <span class="l-tag">Wedding Party Catering</span>
+                <h2>Wujudkan Pernikahan Impian</h2>
+                <div class="l-include">
+                    <p><i class="fas fa-check-circle"></i> Menu Kustom Eksklusif (Appetizer - Dessert)</p>
+                    <p><i class="fas fa-check-circle"></i> Elegant Buffet & Meja VIP Setup</p>
+                    <p><i class="fas fa-check-circle"></i> Tim Waiter & Captain Profesional</p>
+                    <p><i class="fas fa-check-circle"></i> Peralatan Makan Kristal & Gold</p>
+                </div>
+                <div class="price-box">
+                    <h4>Pilihan Paket Pernikahan:</h4>
+                    <div class="p-row">
+                        <div class="p-info"><b>Bronze Package(100-250 Pax)</b><br><small>6 Menu Utama, 1 Dessert, 1 Beverage</small></div>
+                        <b>Mulai Dari Rp 8.000.000</b>
+                    </div>
+                    <div class="p-row highlight">
+                        <div class="p-info"><b>Silver Package(250-600 Pax)</b><br><small>8 Menu Utama, 2 Dessert, 2 Beverage, 1 Stall</small></div>
+                        <b>Mulai Dari Rp11.000.000 </b>
+                    </div>
+                    <div class="p-row">
+                        <div class="p-info"><b>Gold Package(600-1000 Pax)</b><br><small>10 Menu Utama, 3 Dessert, 3 Beverage, 2 Stall</small></div>
+                        <b>Mulai Dari Rp16.000.000</b>
+                    </div>
+                </div>
+                <div class="l-btns">
+                    <button onclick="orderWA('Wedding Party')" class="btn btn-green-wa-fill">WhatsApp</button>
+                    <button onclick="openOrderModal('Wedding Party')" class="btn btn-orange-outline">Order Online</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. BIRTHDAY (Reverse) -->
+        <div class="l-block reverse s-purple-light">
+            <div class="l-img" style="background-image: url('Birthday\ Party\ Catering.png');"></div>
+            <div class="l-content">
+                <span class="l-tag">Birthday Party Catering</span>
+                <h2>Rayakan Momen Bahagia</h2>
+                <div class="l-include">
+                    <p><i class="fas fa-check-circle"></i> Dekorasi Meja Tematik & Balon</p>
+                    <p><i class="fas fa-check-circle"></i> Dessert Table & Snack Corner</p>
+                    <p><i class="fas fa-check-circle"></i> Kids Friendly Menu (Gizi Seimbang)</p>
+                    <p><i class="fas fa-check-circle"></i> Custom 2-Tier Birthday Cake</p>
+                </div>
+                <div class="price-box">
+                    <h4>Pilihan Paket Ulang Tahun:</h4>
+                    <div class="p-row">
+                        <div class="p-info"><b>Kids Fun (50 Pax)</b><br><small>4 Menu Anak, 1 Juice, 2 Snack Manis</small></div>
+                        <b>Rp 4.5jt</b>
+                    </div>
+                    <div class="p-row highlight">
+                        <div class="p-info"><b>Sweet 17 (100 Pax)</b><br><small>6 Menu Utama, 2 Mocktail, 3 Dessert</small></div>
+                        <b>Rp 8.5jt</b>
+                    </div>
+                </div>
+                <div class="l-btns">
+                    <button onclick="orderWA('Birthday Party')" class="btn btn-green-wa-fill">WhatsApp</button>
+                    <button onclick="openOrderModal('Birthday Party')" class="btn btn-orange-outline">Order Online</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. PRASMANAN -->
+        <div class="l-block s-blue-light">
+            <div class="l-img" style="background-image: url('Pasmanan\ Catering\ 23.png');"></div>
+            <div class="l-content">
+                <span class="l-tag">Prasmanan Catering</span>
+                <h2>Solusi Acara Formal</h2>
+                <div class="l-include">
+                    <p><i class="fas fa-check-circle"></i> Pemanas Makanan Rolltop Mewah</p>
+                    <p><i class="fas fa-check-circle"></i> 20+ Pilihan Menu Nusantara & Asia</p>
+                    <p><i class="fas fa-check-circle"></i> Free Ongkir Area Jakarta</p>
+                    <p><i class="fas fa-check-circle"></i> Staff Standby Selama Acara (4 Jam)</p>
+                </div>
+                <div class="price-box">
+                    <h4>Pilihan Paket Prasmanan:</h4>
+                    <div class="p-row">
+                        <div class="p-info"><b>Paket Ekonomi</b><br><small>5 Lauk Utama, Buah Segar, Air Mineral</small></div>
+                        <b>Rp 35.000/pax</b>
+                    </div>
+                    <div class="p-row highlight">
+                        <div class="p-info"><b>Paket Premium</b><br><small>7 Lauk Utama, 1 Dessert, 1 Juice</small></div>
+                        <b>Rp 55.000/pax</b>
+                    </div>
+                </div>
+                <div class="l-btns">
+                    <button onclick="orderWA('Prasmanan')" class="btn btn-green-wa-fill">WhatsApp</button>
+                    <button onclick="openOrderModal('Prasmanan')" class="btn btn-orange-outline">Order Online</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. BOX MEAL (Reverse) -->
+        <div class="l-block reverse s-green-light">
+            <div class="l-img" style="background-image: url('Image\ \(Box\ Meal\ Catering\).png');"></div>
+            <div class="l-content">
+                <span class="l-tag">Box Meal Catering</span>
+                <h2>Praktis & Higienis</h2>
+                <div class="l-include">
+                    <p><i class="fas fa-check-circle"></i> Eco-Friendly Premium Packaging</p>
+                    <p><i class="fas fa-check-circle"></i> Cutlery Set & Napkin In-Box</p>
+                    <p><i class="fas fa-check-circle"></i> Menu Sehat Kalori Terkontrol</p>
+                    <p><i class="fas fa-check-circle"></i> Jaminan Delivery Tepat Waktu</p>
+                </div>
+                <div class="price-box">
+                    <h4>Pilihan Paket Box Meal:</h4>
+                    <div class="p-row">
+                        <div class="p-info"><b>Daily Lunch Box</b><br><small>1 Lauk Utama, 1 Sayur, Sambal, Buah</small></div>
+                        <b>Rp 25.000</b>
+                    </div>
+                    <div class="p-row highlight">
+                        <div class="p-info"><b>Executive Meeting Box</b><br><small>2 Lauk Utama, 1 Sayur, Dessert, Juice</small></div>
+                        <b>Rp 45.000</b>
+                    </div>
+                </div>
+                <div class="l-btns">
+                    <button onclick="orderWA('Box Meal')" class="btn btn-green-wa-fill">WhatsApp</button>
+                    <button onclick="openOrderModal('Box Meal')" class="btn btn-orange-outline">Order Online</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. PRIVATE DINING -->
+        <div class="l-block s-beige-light">
+            <div class="l-img" style="background-image: url('Private\ Dining\ Experience.png');"></div>
+            <div class="l-content">
+                <span class="l-tag">Private Dining Experience</span>
+                <h2>Eksklusif Chef Pribadi</h2>
+                <div class="l-include">
+                    <p><i class="fas fa-check-circle"></i> Personal Chef Datang ke Rumah</p>
+                    <p><i class="fas fa-check-circle"></i> Table Setting Mewah (Full Decor)</p>
+                    <p><i class="fas fa-check-circle"></i> Menu Tasting Course Spesifik</p>
+                    <p><i class="fas fa-check-circle"></i> Intimate Vibe & Personal Music</p>
+                </div>
+                <div class="price-box">
+                    <h4>Estimasi Harga:</h4>
+                    <div class="p-row">
+                        <div class="p-info"><b>Couple Date(Only 2 Pax)</b><br><small>4 Course Fine Dining,Table Set Up,Live Music,Full Service, Welcome Drink</small></div>
+                        <b>Mulai Rp 4jt</b>
+                    </div>
+                    <div class="p-row highlight">
+                        <div class="p-info"><b>Family Table (4-15 Pax)</b><br><small>6 Course Fine Dining,Table Set Up And Venue,,Entertaintment,Full Service, Butler Service</small></div>
+                        <b>Mulai Rp 8jt</b>
+                    </div>
+                </div>
+                <div class="l-btns">
+                    <button onclick="orderWA('Private Dining')" class="btn btn-green-wa-fill">WhatsApp</button>
+                    <button onclick="openOrderModal('Private Dining')" class="btn btn-orange-outline">Order Online</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- KONSULTASI SECTION -->
+    <section class="container section-padding">
+        <div class="konsul-banner">
+            <div class="kb-text">
+                <h2>Butuh Konsultasi Khusus?</h2>
+                <p>Mulai dari venue hingga detail menu terkecil, tim ahli kami siap membantu menyusun rencana acara Anda secara personal.</p>
+                <div class="kb-perks">
+                    <span><i class="fas fa-check-circle"></i> Penyesuaian Budget</span>
+                    <span><i class="fas fa-check-circle"></i> Food Tasting Gratis</span>
+                    <span><i class="fas fa-check-circle"></i> Venue Recommendation</span>
+                </div>
+            </div>
+            <div class="kb-action">
+                <button onclick="toggleModal('consultModal', true)" class="btn btn-white-pill-lg">Mulai Konsultasi &rarr;</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="f-col about">
+                <h2>HardlyTasteworks</h2>
+                <span class="f-tagline">Premium Catering</span>
+                <p>Penyedia layanan catering premium dengan pengalaman 8+ tahun melayani ribuan acara sukses di Jakarta.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="f-col links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="Index.html">&rarr; Home</a></li>
+                    <li><a href="BrowseMenu.html">&rarr; Browse Menu</a></li>
+                    <li><a href="OurTeam.html">&rarr; Our Team</a></li>
+                    <li><a href="Layanan.html">&rarr; Layanan</a></li>
+                    <li><a href="Testimoni.html">&rarr; Testimoni</a></li>
+                </ul>
+            </div>
+            <div class="f-col svcs">
+                <h4>Our Services</h4>
+                <ul>
+                    <li>Wedding Party Catering</li>
+                    <li>Birthday Party Catering</li>
+                    <li>Prasmanan Catering</li>
+                    <li>Box Meal Catering</li>
+                    <li>Private Dining Experience</li>
+                    <li>Corporate Events</li>
+                </ul>
+            </div>
+            <div class="f-col contact">
+                <h4>Contact Us</h4>
+                <div class="c-item"><i class="fas fa-phone-alt"></i> <span>Customer Service</span><br>+62 812-3456-7890</div>
+                <div class="c-item"><i class="fas fa-envelope"></i> <span>Email</span><br>info@hardlytasteworks.com</div>
+                <div class="c-item"><i class="fas fa-clock"></i> <span>Jam Operasional</span><br>Senin - Minggu 08:00 - 22:00 WIB</div>
+            </div>
+        </div>
+
+        <div class="container branches-footer">
+            <h4 class="title-branches">Our Branches</h4>
+            <div class="bf-grid">
+                <div class="bf-card"><h5>Central Jakarta</h5><p>Jl. Sudirman No. 123, Jakarta Pusat</p><p>+62 812-3456-7890</p></div>
+                <div class="bf-card"><h5>South Jakarta</h5><p>Jl. TB Simatupang No. 45, Jakarta Selatan</p><p>+62 812-3456-7891</p></div>
+                <div class="bf-card"><h5>West Jakarta</h5><p>Jl. Panjang No. 78, Jakarta Barat</p><p>+62 812-3456-7892</p></div>
+                <div class="bf-card"><h5>East Jakarta</h5><p>Jl. Raya Bekasi No. 90, Jakarta Timur</p><p>+62 812-3456-7893</p></div>
+            </div>
+        </div>
+
+        <div class="container newsletter-section text-center">
+            <h4>Subscribe to Our Newsletter</h4>
+            <p>Dapatkan info promo, menu baru, dan tips catering langsung ke email Anda</p>
+            <form class="news-form">
+                <input type="email" placeholder="Enter your email...">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container b-flex">
+                <p>&copy; 2025 HardlyTasteworks. All rights reserved.</p>
+                <div class="legal"><a href="#">Privacy Policy</a> <a href="#">Terms of Service</a> <a href="#">FAQ</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL ORDER -->
+    <div id="orderModal" class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header"><h3>Form Pemesanan Online</h3><span class="close-btn" onclick="closeModal('orderModal')">&times;</span></div>
+            <form id="orderForm">
+                <div class="f-group"><label>Nama Lengkap</label><input type="text" id="o-name" required></div>
+                <div class="f-group">
+                    <label>Layanan yang Dipilih</label>
+                    <select id="o-svc">
+                        <option value="Wedding Party">Wedding Party</option>
+                        <option value="Birthday Party">Birthday Party</option>
+                        <option value="Prasmanan">Prasmanan</option>
+                        <option value="Box Meal">Box Meal</option>
+                        <option value="Private Dining">Private Dining</option>
+                        <option value="Layanan Umum">Layanan Lainnya</option>
+                    </select>
+                </div>
+                <div class="f-group"><label>Jumlah Pax</label><input type="number" id="o-pax" required placeholder="Minimal 50"></div>
+                <button type="submit" class="btn btn-orange-submit btn-full">Kirim Pesanan ke WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL KONSULTASI (FULL FORM) -->
+    <div id="consultModal" class="modal-overlay">
+        <div class="modal-box modal-large">
+            <div class="modal-header"><h3>Formulir Konsultasi Event</h3><span class="close-btn" onclick="closeModal('consultModal')">&times;</span></div>
+            <form id="consultForm">
+                <div class="form-scroll-area">
+                    <div class="f-group"><label>Nama Lengkap</label><input type="text" id="c-name" required placeholder="Masukkan nama Anda"></div>
+                    <div class="f-row">
+                        <div class="f-group"><label>Jenis Acara</label>
+                            <select id="c-type"><option>Wedding Party</option><option>Birthday Party</option><option>Gathering</option></select>
+                        </div>
+                        <div class="f-group"><label>Estimasi Pax</label><input type="number" id="c-pax" required></div>
+                    </div>
+                    <div class="f-group"><label>Detail Rencana Event</label><textarea id="c-detail" placeholder="Request khusus..."></textarea></div>
+                    <div class="f-group">
+                        <label>Venue / Lokasi Acara</label>
+                        <select id="c-venue" onchange="toggleVenueInput()">
+                            <option value="Sudah Ada">Sudah Ada Lokasi</option>
+                            <option value="Butuh Rekomendasi">Butuh Rekomendasi Venue</option>
+                        </select>
+                        <input type="text" id="c-venue-detail" placeholder="Masukkan Alamat Gedung" style="margin-top:10px;">
+                    </div>
+                    <div class="f-group"><label>Tanggal Event</label><input type="date" id="c-date-event" required></div>
+                    <div class="f-group">
+                        <label>Metode Konsultasi</label>
+                        <select id="c-mode" onchange="toggleModeInput()">
+                            <option value="Online">Online (Zoom/Meet)</option>
+                            <option value="Offline">Offline (Tatap Muka)</option>
+                        </select>
+                    </div>
+                    <div id="mode-detail-area"></div>
+                    <div class="f-group"><label>Jadwal Konsultasi</label><input type="datetime-local" id="c-date-consult" required></div>
+                </div>
+                <button type="submit" class="btn btn-orange-submit btn-full">Kirim Permintaan Konsultasi (WA)</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="Layanan.js"></script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimoni - HardlyTasteworks</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="Testimoni.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">
+                <span class="brand">HardlyTasteworks</span>
+                <span class="tagline">Premium Catering Services</span>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="BrowseMenu.html" class="nav-item">Browse Menu</a>
+                <a href="OurTeam.html" class="nav-item">Our Team</a>
+                <a href="layanan.html" class="nav-item">Layanan</a>
+                <a href="Testimoni.html" class="nav-pill active">Testimoni</a>
+            </nav>
+            <div class="header-btns">
+                <a href="https://wa.me/6281995223741" target="_blank" class="btn btn-nav-wa">
+                    <i class="fas fa-phone-alt"></i> Order via WhatsApp
+                </a>
+                <button class="btn btn-nav-orange" onclick="openOrderModal()">
+                    <i class="fa-solid fa-cart-shopping"></i> Order Online
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero-sub">
+        <div class="container text-center">
+            <div class="hero-badge"><i class="fa-solid fa-star"></i> Testimoni</div>
+            <h1 class="hero-title">What Our <span class="highlight">Clients</span> Say</h1>
+            <p class="hero-desc">Kepuasan pelanggan adalah kebanggaan kami. Baca pengalaman mereka yang telah mempercayai HardlyTasteworks.</p>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="container stats-testi-wrapper">
+        <div class="stats-testi-grid">
+            <div class="stat-card">
+                <div class="s-icon-circle pink"><i class="fa-solid fa-heart"></i></div>
+                <h3>5000+</h3><p>Happy Clients</p>
+            </div>
+            <div class="stat-card">
+                <div class="s-icon-circle orange"><i class="fa-solid fa-star"></i></div>
+                <h3>4.8/5.0</h3><p>Average Rating</p>
+            </div>
+            <div class="stat-card">
+                <div class="s-icon-circle green"><i class="fa-solid fa-thumbs-up"></i></div>
+                <h3>98%</h3><p>Satisfaction Rate</p>
+            </div>
+            <div class="stat-card">
+                <div class="s-icon-circle blue"><i class="fa-solid fa-award"></i></div>
+                <h3>15+</h3><p>Awards Won</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL GRID (9 CARDS) -->
+    <section class="container section-padding">
+        <div class="testi-grid">
+            <!-- Baris 1 -->
+            <div class="testi-card">
+                <div class="quote-icon-bg"><i class="fa-solid fa-quote-left"></i></div>
+                <div class="stars-row">★★★★★</div>
+                <p>"HardlyTasteworks membuat hari pernikahan kami sempurna! Menu yang disajikan sangat lezat dan presentasinya elegan. Sangat recommended!"</p>
+                <div class="user-meta">
+                    <img src="https://i.pravatar.cc/100?u=1" alt="user">
+                    <div><strong>Sarah & David</strong><span class="svc-type">Wedding Party</span></div>
+                </div>
+            </div>
+            <div class="testi-card">
+                <div class="quote-icon-bg"><i class="fa-solid fa-quote-left"></i></div>
+                <div class="stars-row">★★★★★</div>
+                <p>"Sudah 3 tahun kami menggunakan jasa HardlyTasteworks untuk annual gathering perusahaan. Kualitasnya konsisten!"</p>
+                <div class="user-meta">
+                    <img src="https://i.pravatar.cc/100?u=2" alt="user">
+                    <div><strong>PT Maju Jaya</strong><span class="svc-type">Corporate Event</span></div>
+                </div>
+            </div>
+            <div class="testi-card">
+                <div class="quote-icon-bg"><i class="fa-solid fa-quote-left"></i></div>
+                <div class="stars-row">★★★★★</div>
+                <p>"Ulang tahun anak saya jadi berkesan. Menu kids friendly-nya disukai semua tamu. Terima kasih HardlyTasteworks!"</p>
+                <div class="user-meta">
+                    <img src="https://i.pravatar.cc/100?u=3" alt="user">
+                    <div><strong>Ibu Ratna Sari</strong><span class="svc-type">Birthday Party</span></div>
+                </div>
+            </div>
+            <!-- Baris 2 -->
+            <div class="testi-card">
+                <div class="quote-icon-bg"><i class="fa-solid fa-quote-left"></i></div>
+                <div class="stars-row">★★★★★</div>
+                <p>"Private dining untuk anniversary kami sungguh istimewa! Chef sangat profesional dan menu fine dining-nya berkelas."</p>
+                <div class="user-meta">
+                    <img src="https://i.pravatar.cc/100?u=4" alt="user">
+                    <div><strong>Bapak Agus Wijaya</strong><span class="svc-type">Private Dining</span></div>
+                </div>
+            </div>
+            <div class="testi-card">
+                <div class="quote-icon-bg"><i class="fa-solid fa-quote-left"></i></div>
+                <div class="stars-row">★★★★★</div>
+                <p>"Best decision pilih Hardly! Dari konsultasi sampai hari-H semuanya smooth. Live cooking station jadi favorit tamu."</p>
+                <div class="user-meta">
+                    <img src="https://i.pravatar.cc/100?u=5" alt="user">
+                    <div><strong>Linda & Eko</strong><span class="svc-type">Wedding Party</span></div>
+                </div>
+            </div>
+            <div class="testi-card">
+                <div class="quote-icon-bg"><i class="fa-solid fa-quote-left"></i></div>
+                <div class="stars-row">★★★★★</div>
+                <p>"Prasmanan untuk acara kantor selalu memuaskan. Rasa autentik dan harga sangat masuk akal bagi kami."</p>
+                <div class="user-meta">
+                    <img src="https://i.pravatar.cc/100?u=6" alt="user">
+                    <div><strong>CV Karya Bersama</strong><span class="svc-type">Prasmanan</span></div>
+                </div>
+            </div>
+            <!-- Baris 3 -->
+            <div class="testi-card">
+                <div class="quote-icon-bg"><i class="fa-solid fa-quote-left"></i></div>
+                <div class="stars-row">★★★★★</div>
+                <p>"Reuni keluarga besar kami sukses. 150 pax terlayani dengan sangat baik, makanan enak semua dan pramusaji ramah."</p>
+                <div class="user-meta">
+                    <img src="https://i.pravatar.cc/100?u=7" alt="user">
+                    <div><strong>Ibu Siti Aminah</strong><span class="svc-type">Family Gathering</span></div>
+                </div>
+            </div>
+            <div class="testi-card">
+                <div class="quote-icon-bg"><i class="fa-solid fa-quote-left"></i></div>
+                <div class="stars-row">★★★★★</div>
+                <p>"Order box meal untuk seminar rutin. Packaging rapi, makanan hangat dan variasi menunya tidak membosankan."</p>
+                <div class="user-meta">
+                    <img src="https://i.pravatar.cc/100?u=8" alt="user">
+                    <div><strong>Bapak Hendra</strong><span class="svc-type">Box Meal</span></div>
+                </div>
+            </div>
+            <div class="testi-card">
+                <div class="quote-icon-bg"><i class="fa-solid fa-quote-left"></i></div>
+                <div class="stars-row">★★★★★</div>
+                <p>"Teen party anak kami sukses besar! Menu modern dan sesuai selera anak muda. Terima kasih banyak!"</p>
+                <div class="user-meta">
+                    <img src="https://i.pravatar.cc/100?u=9" alt="user">
+                    <div><strong>Dina & Adi</strong><span class="svc-type">Birthday Party</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- RATING BREAKDOWN (Ukuran Normal) -->
+    <section class="container" style="padding: 40px 20px;">
+        <div class="rating-breakdown-card">
+            <h3 class="text-center" style="margin-bottom: 30px; font-size: 24px; color: #333;">Rating Breakdown</h3>
+            
+            <div class="breakdown-content">
+                <!-- Progress Bars -->
+                <div class="bars-area">
+                    <div class="b-row">
+                        <span class="b-label">5 ★</span>
+                        <div class="b-bar-bg"><div class="b-fill" style="width: 92%;"></div></div>
+                        <span class="b-perc">92%</span>
+                        <span class="b-count">(4612)</span>
+                    </div>
+                    <div class="b-row">
+                        <span class="b-label">4 ★</span>
+                        <div class="b-bar-bg"><div class="b-fill" style="width: 6%;"></div></div>
+                        <span class="b-perc">6%</span>
+                        <span class="b-count">(301)</span>
+                    </div>
+                    <div class="b-row">
+                        <span class="b-label">3 ★</span>
+                        <div class="b-bar-bg"><div class="b-fill" style="width: 1%;"></div></div>
+                        <span class="b-perc">1%</span>
+                        <span class="b-count">(52)</span>
+                    </div>
+                    <div class="b-row">
+                        <span class="b-label">2 ★</span>
+                        <div class="b-bar-bg"><div class="b-fill" style="width: 0.5%;"></div></div>
+                        <span class="b-perc">0.5%</span>
+                        <span class="b-count">(25)</span>
+                    </div>
+                    <div class="b-row">
+                        <span class="b-label">1 ★</span>
+                        <div class="b-bar-bg"><div class="b-fill" style="width: 0.5%;"></div></div>
+                        <span class="b-perc">0.5%</span>
+                        <span class="b-count">(10)</span>
+                    </div>
+                </div>
+
+                <div class="breakdown-sep"></div>
+
+                <!-- Score Summary -->
+                <div class="score-summary text-center">
+                    <div class="stars-gold">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h2 class="big-number">4.8 out of 5</h2>
+                    <p class="sub-text">Based on 5,000+ reviews</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUCCESS CTA BANNER (Ukuran Normal) -->
+    <section class="container" style="padding-bottom: 60px;">
+        <div class="success-banner-normal">
+            <h2>Jadilah Bagian dari Kisah Sukses Kami!</h2>
+            <p>Bergabunglah dengan ribuan pelanggan yang puas dengan layanan HardlyTasteworks</p>
+            <button class="btn-cta-white" onclick="openOrderModal()">Mulai Order Sekarang</button>
+        </div>
+    </section>
+    <!-- RATING BREAKDOWN & CTA -->
+    <!-- (Gunakan struktur Rating Breakdown dan Success Banner dari versi sebelumnya) -->
+
+    <!-- FOOTER LENGKAP (Teks No-Bold) -->
+   
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="f-col about">
+                <h2>HardlyTasteworks</h2>
+                <span class="f-tagline">Premium Catering</span>
+                <p>Penyedia layanan catering premium dengan pengalaman 8+ tahun melayani ribuan acara sukses di Jakarta.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="f-col links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="Index.html">&rarr; Home</a></li>
+                    <li><a href="BrowseMenu.html">&rarr; Browse Menu</a></li>
+                    <li><a href="OurTeam.html">&rarr; Our Team</a></li>
+                    <li><a href="Layanan.html">&rarr; Layanan</a></li>
+                    <li><a href="Testimoni.html">&rarr; Testimoni</a></li>
+                </ul>
+            </div>
+            <div class="f-col svcs">
+                <h4>Our Services</h4>
+                <ul>
+                    <li>Wedding Party Catering</li>
+                    <li>Birthday Party Catering</li>
+                    <li>Prasmanan Catering</li>
+                    <li>Box Meal Catering</li>
+                    <li>Private Dining Experience</li>
+                    <li>Corporate Events</li>
+                </ul>
+            </div>
+            <div class="f-col contact">
+                <h4>Contact Us</h4>
+                <div class="c-item"><i class="fas fa-phone-alt"></i> <span>Customer Service</span><br>+62 812-3456-7890</div>
+                <div class="c-item"><i class="fas fa-envelope"></i> <span>Email</span><br>info@hardlytasteworks.com</div>
+                <div class="c-item"><i class="fas fa-clock"></i> <span>Jam Operasional</span><br>Senin - Minggu 08:00 - 22:00 WIB</div>
+            </div>
+        </div>
+
+        <div class="container branches-footer">
+            <h4 class="title-branches">Our Branches</h4>
+            <div class="bf-grid">
+                <div class="bf-card"><h5>Central Jakarta</h5><p>Jl. Sudirman No. 123, Jakarta Pusat</p><p>+62 812-3456-7890</p></div>
+                <div class="bf-card"><h5>South Jakarta</h5><p>Jl. TB Simatupang No. 45, Jakarta Selatan</p><p>+62 812-3456-7891</p></div>
+                <div class="bf-card"><h5>West Jakarta</h5><p>Jl. Panjang No. 78, Jakarta Barat</p><p>+62 812-3456-7892</p></div>
+                <div class="bf-card"><h5>East Jakarta</h5><p>Jl. Raya Bekasi No. 90, Jakarta Timur</p><p>+62 812-3456-7893</p></div>
+            </div>
+        </div>
+
+        <div class="container newsletter-section text-center">
+            <h4>Subscribe to Our Newsletter</h4>
+            <p>Dapatkan info promo, menu baru, dan tips catering langsung ke email Anda</p>
+            <form class="news-form">
+                <input type="email" placeholder="Enter your email...">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container b-flex">
+                <p>&copy; 2025 HardlyTasteworks. All rights reserved.</p>
+                <div class="legal"><a href="#">Privacy Policy</a> <a href="#">Terms of Service</a> <a href="#">FAQ</a></div>
+            </div>
+        </div>
+    </footer>z
+        <!-- ... Footer sama seperti sebelumnya ... -->
+  
+    <!-- MODAL ORDER FORM (PERBAIKAN: SESUAI GAMBAR FOTO) -->
+    <div id="orderModal" class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>Form Pemesanan Online</h3>
+                <span class="close-btn" onclick="closeModal('orderModal')">&times;</span>
+            </div>
+            <form id="orderForm">
+                <div class="f-group">
+                    <label>Nama Lengkap</label>
+                    <input type="text" id="o-name" required placeholder="Nama Anda">
+                </div>
+                <div class="f-group">
+                    <label>Pilih Layanan</label>
+                    <select id="o-svc" required>
+                        <option value="">-- Pilih Layanan --</option>
+                        <option value="Wedding Party">Wedding Party Catering</option>
+                        <option value="Birthday Party">Birthday Party Catering</option>
+                        <option value="Prasmanan">Prasmanan Catering</option>
+                        <option value="Box Meal">Box Meal Catering</option>
+                        <option value="Private Dining">Private Dining Experience</option>
+                    </select>
+                </div>
+                <div class="f-group">
+                    <label>Tanggal Acara</label>
+                    <input type="date" id="o-date" required>
+                </div>
+                <div class="f-group">
+                    <label>Jumlah Pax</label>
+                    <input type="number" id="o-pax" required placeholder="Contoh: 100">
+                </div>
+                <div class="f-group">
+                    <label>Catatan</label>
+                    <textarea id="o-note" placeholder="Tambahan detail khusus..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-orange-submit btn-full">Kirim ke WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="Testimoni.js"></script>
+</body>
+</html>

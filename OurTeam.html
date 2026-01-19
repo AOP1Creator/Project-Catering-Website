@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - HardlyTasteworks</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-poppins/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="OurTeam.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">
+                <span class="brand">HardlyTasteworks</span>
+                <span class="tagline">Premium Catering Services</span>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="BrowseMenu.html" class="nav-item">Browse Menu</a>
+                <a href="OurTeam.html" class="nav-pill active">Our Team</a>
+                <a href="Layanan.html" class="nav-item">Layanan</a>
+                <a href="Testimoni.html" class="nav-item">Testimoni</a>
+            </nav>
+            <div class="header-btns">
+                <a href="https://wa.me/6281995223741" target="_blank" class="btn btn-nav-wa">
+                    <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                </a>
+                <button class="btn btn-nav-orange" onclick="openOrderModal()">
+                    <i class="fas fa-shopping-cart"></i> Order Online
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-team">
+        <div class="container text-center">
+            <div class="hero-badge"><i class="fas fa-users"></i> Our Team</div>
+            <h1 class="hero-title">Meet The People Behind <br><span class="highlight">HardlyTasteworks</span></h1>
+            <p class="hero-desc">Tim profesional dengan passion tinggi dan dedikasi penuh untuk menciptakan pengalaman kuliner terbaik</p>
+        </div>
+    </section>
+
+    <!-- TEAM GRID -->
+    <section class="container section-padding">
+        <div class="team-grid">
+            <!-- Staff 1 -->
+            <div class="team-card">
+                <div class="team-photo-wrapper">
+                    <img src="https://i.pravatar.cc/400?u=jun" class="team-img">
+                    <div class="team-label">
+                        <h4>Jun Wo</h4>
+                        <span>Chef & Founder</span>
+                    </div>
+                </div>
+                <div class="team-bio">
+                    <p>Lulusan universitas di Paris dengan pengalaman 15 tahun di industri kuliner internasional.</p>
+                    <div class="team-social">
+                        <a href="#" class="btn-soc-link linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="#" class="btn-soc-link email"><i class="far fa-envelope"></i> Email</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Staff 2 -->
+            <div class="team-card">
+                <div class="team-photo-wrapper">
+                    <img src="https://i.pravatar.cc/400?u=siti" class="team-img">
+                    <div class="team-label"><h4>Siti Nurhaliza</h4><span>Operations Manager</span></div>
+                </div>
+                <div class="team-bio">
+                    <p>Expert dalam manajemen catering dengan track record sukses mengelola 100+ event per tahun.</p>
+                    <div class="team-social">
+                        <a href="#" class="btn-soc-link linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="#" class="btn-soc-link email"><i class="far fa-envelope"></i> Email</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Staff 3 -->
+            <div class="team-card">
+                <div class="team-photo-wrapper">
+                    <img src="https://i.pravatar.cc/400?u=naila" class="team-img">
+                    <div class="team-label"><h4>Naila</h4><span>Head Chef</span></div>
+                </div>
+                <div class="team-bio">
+                    <p>Spesialis dessert & pastry dengan sertifikasi internasional, kreator wedding cake favorit.</p>
+                    <div class="team-social">
+                        <a href="#" class="btn-soc-link linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="#" class="btn-soc-link email"><i class="far fa-envelope"></i> Email</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Baris 2 -->
+            <div class="team-card">
+                <div class="team-photo-wrapper">
+                    <img src="https://i.pravatar.cc/400?u=mike" class="team-img">
+                    <div class="team-label"><h4>Michael Chen</h4><span>Executive Chef</span></div>
+                </div>
+                <div class="team-bio">
+                    <p>Master dalam fusion cuisine, menggabungkan cita rasa timur dan barat dengan sempurna.</p>
+                    <div class="team-social">
+                        <a href="#" class="btn-soc-link linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="#" class="btn-soc-link email"><i class="far fa-envelope"></i> Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-photo-wrapper">
+                    <img src="https://i.pravatar.cc/400?u=ratna" class="team-img">
+                    <div class="team-label"><h4>Ratna Dewi</h4><span>Event Coordinator</span></div>
+                </div>
+                <div class="team-bio">
+                    <p>Berpengalaman mengkoordinasi wedding & corporate events dengan detail sempurna.</p>
+                    <div class="team-social">
+                        <a href="#" class="btn-soc-link linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="#" class="btn-soc-link email"><i class="far fa-envelope"></i> Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-photo-wrapper">
+                    <img src="https://i.pravatar.cc/400?u=andi" class="team-img">
+                    <div class="team-label"><h4>Andi Pratama</h4><span>Quality Control</span></div>
+                </div>
+                <div class="team-bio">
+                    <p>Memastikan setiap hidangan memenuhi standar kualitas tertinggi HardlyTasteworks.</p>
+                    <div class="team-social">
+                        <a href="#" class="btn-soc-link linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="#" class="btn-soc-link email"><i class="far fa-envelope"></i> Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE VALUES -->
+    <section class="section-padding" style="background-color: #fdfdfd;">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <h2 style="font-size: 32px;">Our Core Values</h2>
+                <p style="color: #666;">Nilai-nilai yang menjadi fondasi kuat HardlyTasteworks</p>
+            </div>
+            <div class="values-grid">
+                <div class="val-card"><div class="val-icon"><i class="fas fa-heart"></i></div><h4>Passion for Excellence</h4><p>Kami mencintai apa yang kami lakukan dan berkomitmen memberikan yang terbaik.</p></div>
+                <div class="val-card"><div class="val-icon"><i class="fas fa-bullseye"></i></div><h4>Customer First</h4><p>Kepuasan pelanggan adalah prioritas utama dalam setiap layanan kami.</p></div>
+                <div class="val-card"><div class="val-icon"><i class="fas fa-medal"></i></div><h4>Quality Guaranteed</h4><p>Standar kualitas premium di setiap detail, dari bahan hingga penyajian.</p></div>
+                <div class="val-card"><div class="val-icon"><i class="fas fa-users"></i></div><h4>Team Collaboration</h4><p>Kerjasama tim yang solid untuk hasil sempurna di setiap acara.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOIN SECTION -->
+    <section class="container section-padding">
+        <div class="join-banner">
+            <h2>Join Our Team!</h2>
+            <p>Kami selalu mencari talenta terbaik untuk bergabung dengan keluarga HardlyTasteworks</p>
+            <button class="btn btn-white-pill" onclick="handleCareerCheck()">Lihat Posisi Tersedia</button>
+        </div>
+    </section>
+
+    <!-- FOOTER LENGKAP -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="f-col about">
+                <h2>HardlyTasteworks</h2>
+                <span class="f-tagline">Premium Catering</span>
+                <p>Penyedia layanan catering premium dengan pengalaman 8+ tahun melayani ribuan acara sukses di Jakarta.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="f-col links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="Index.html">&rarr; Home</a></li>
+                    <li><a href="BrowseMenu.html">&rarr; Browse Menu</a></li>
+                    <li><a href="OurTeam.html">&rarr; Our Team</a></li>
+                    <li><a href="Layanan.html">&rarr; Layanan</a></li>
+                    <li><a href="Testimoni.html">&rarr; Testimoni</a></li>
+                </ul>
+            </div>
+            <div class="f-col svcs">
+                <h4>Our Services</h4>
+                <ul>
+                    <li>Wedding Party Catering</li>
+                    <li>Birthday Party Catering</li>
+                    <li>Prasmanan Catering</li>
+                    <li>Box Meal Catering</li>
+                    <li>Private Dining Experience</li>
+                    <li>Corporate Events</li>
+                </ul>
+            </div>
+            <div class="f-col contact">
+                <h4>Contact Us</h4>
+                <div class="c-item"><i class="fas fa-phone-alt"></i> <span>Customer Service</span><br>+62 812-3456-7890</div>
+                <div class="c-item"><i class="fas fa-envelope"></i> <span>Email</span><br>info@hardlytasteworks.com</div>
+                <div class="c-item"><i class="fas fa-clock"></i> <span>Jam Operasional</span><br>Senin - Minggu 08:00 - 22:00 WIB</div>
+            </div>
+        </div>
+
+        <div class="container branches-footer">
+            <h4 class="title-branches">Our Branches</h4>
+            <div class="bf-grid">
+                <div class="bf-card"><h5>Central Jakarta</h5><p>Jl. Sudirman No. 123, Jakarta Pusat</p><p>+62 812-3456-7890</p></div>
+                <div class="bf-card"><h5>South Jakarta</h5><p>Jl. TB Simatupang No. 45, Jakarta Selatan</p><p>+62 812-3456-7891</p></div>
+                <div class="bf-card"><h5>West Jakarta</h5><p>Jl. Panjang No. 78, Jakarta Barat</p><p>+62 812-3456-7892</p></div>
+                <div class="bf-card"><h5>East Jakarta</h5><p>Jl. Raya Bekasi No. 90, Jakarta Timur</p><p>+62 812-3456-7893</p></div>
+            </div>
+        </div>
+
+        <div class="container newsletter-section text-center">
+            <h4>Subscribe to Our Newsletter</h4>
+            <p>Dapatkan info promo, menu baru, dan tips catering langsung ke email Anda</p>
+            <form class="news-form">
+                <input type="email" placeholder="Enter your email...">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container b-flex">
+                <p>&copy; 2025 HardlyTasteworks. All rights reserved.</p>
+                <div class="legal"><a href="#">Privacy Policy</a> <a href="#">Terms of Service</a> <a href="#">FAQ</a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- MODAL ORDER CATERING -->
+     
+    <div id="orderModal" class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header"><h3>Form Pemesanan Catering</h3><span class="close-btn" onclick="closeModal('orderModal')">&times;</span></div>
+            <form id="orderForm">
+                <div class="f-group"><label>Nama Lengkap</label><input type="text" id="o-name" required></div>
+                <div class="f-group">
+                    <label>Jenis Layanan</label>
+                    <select id="o-service" required>
+                        <option value="Wedding Party">Wedding Party</option>
+                        <option value="Birthday Party">Birthday Party</option>
+                        <option value="Box Meal Catering">Box Meal Catering</option>
+                        <option value="Prasmanan">Prasmanan</option>
+                        <option value="Private Dining Experience">Private Dining Experience</option>
+                    </select>
+                </div>
+                <div class="f-group"><label>Jumlah Pax</label><input type="number" id="o-pax" required></div>
+                <button type="submit" class="btn btn-orange-submit">Kirim Pesanan (WhatsApp)</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL CAREER (Cek Posisi) -->
+    <div id="careerModal" class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header"><h3>Posisi Tersedia</h3><span class="close-btn" onclick="closeModal('careerModal')">&times;</span></div>
+            <div id="careerList"></div>
+        </div>
+    </div>
+
+    <!-- MODAL APPLY STAFF (Form Pendaftaran) -->
+    <div id="applyModal" class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header"><h3>Form Pendaftaran Staff</h3><span class="close-btn" onclick="closeModal('applyModal')">&times;</span></div>
+            <form id="careerForm">
+                <div class="f-group"><label>Nama Pelamar</label><input type="text" id="app-name" required></div>
+                <div class="f-group"><label>Posisi yang Dilamar</label><input type="text" id="app-pos" readonly></div>
+                <div class="f-group"><label>Link Portofolio/CV</label><input type="url" id="app-link" required placeholder="https://..."></div>
+                <button type="submit" class="btn btn-orange-submit">Kirim via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="OurTeam.js"></script>
+</body>
+</html>

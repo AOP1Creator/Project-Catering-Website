@@ -1,0 +1,226 @@
+:root {
+    --orange: #f36a10; --green: #00c853; --dark: #1a0b06; --brown-nav: #2d160a;
+    --pill: #743e26; --gold: #f2b33d; --white: #ffffff;
+}
+
+* { margin:0; padding:0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+body { background: white; color: #333; line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.section-padding { padding: 80px 0; }
+.text-center { text-align: center; }
+.hidden { display: none !important; }
+
+/* NAVBAR & LOGO */
+.main-header { background: var(--brown-nav); padding: 15px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.header-flex { display: flex; justify-content: space-between; align-items: center; }
+.logo .brand { color: white; font-weight: 600; font-size: 20px; display: block; }
+.logo .tagline { font-size: 11px; color: var(--gold); text-transform: uppercase; }
+.header-btns { display: flex; gap: 20px; }
+.nav-pill.active { background-color: var(--pill); color: white; border-radius: 12px; padding: 10px 22px; text-decoration: none; }
+.nav-item { color: white; text-decoration: none; padding: 10px 15px; font-size: 14px; opacity: 0.7; }
+
+/* INTRO & SPACING */
+.menu-intro-section { padding: 120px 0 50px; text-align: center; }
+.menu-intro-section h1 { font-size: 52px; font-weight: 600; margin-bottom: 15px; color: #111; }
+
+/* GRID & HIGHLIGHT ANIMATION */
+.menu-page-bg { background-color: #fdfdfd; }
+.menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+.m-card { background: white; border-radius: 18px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.03); transition: 0.4s ease; border: 1px solid #f1f1f1; }
+
+.menu-grid:hover > .m-card:not(:hover) { opacity: 0.5; filter: blur(1.5px); }
+.m-card:hover { transform: scale(1.05) translateY(-10px); z-index: 10; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border-color: var(--orange); }
+
+.m-img { height: 230px; background-size: cover; position: relative; padding: 15px; background-position: center; }
+.badge-pop { background: var(--orange); color: white; position: absolute; left: 15px; top: 15px; padding: 5px 12px; border-radius: 20px; font-size: 10px; font-weight: bold; }
+.badge-rate { background: white; color: #333; position: absolute; right: 15px; top: 15px; padding: 5px 12px; border-radius: 20px; font-size: 10px; font-weight: bold; }
+.m-info { padding: 25px; text-align: left; }
+.m-price { font-size: 22px; font-weight: 700; color: var(--orange); margin: 15px 0; }
+
+/* BUTTONS */
+.btn { border: none; cursor: pointer; text-decoration: none; font-weight: 600 !important; border-radius: 10px; font-size: 14px; display: inline-flex; align-items: center; gap: 10px; transition: 0.3s; }
+.btn-nav-wa { background: var(--green); color: white; padding: 12px 20px; }
+.btn-nav-orange { background: var(--orange); color: white; padding: 12px 20px; }
+.btn-wa-sm { background: var(--green); color: white; flex: 1; justify-content: center; padding: 12px; border-radius: 8px; }
+.btn-orange-sm { background: var(--orange); color: white; flex: 1; justify-content: center; padding: 12px; border-radius: 8px; }
+
+/* KONSULTASI SECTION SPACING */
+.custom-banner-box { background: var(--orange); padding: 50px; border-radius: 25px; color: white; margin-top: 80px; margin-bottom: 120px; /* JARAK DARI FOOTER */ display: flex; justify-content: space-between; align-items: center; }
+.btn-white-pill { background: white; color: var(--orange); padding: 15px 40px; border-radius: 50px; }
+
+/* FILTER CARD */
+.filter-card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 40px; }
+.filter-top { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding-bottom: 25px; margin-bottom: 15px; }
+.search-box { position: relative; width: 320px; }
+.search-box i { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #bbb; }
+.search-box input { width: 100%; padding: 12px 15px 12px 45px; border: 1px solid #ddd; border-radius: 10px; outline: none; }
+.filter-pills { display: flex; gap: 8px; }
+.pill { border: none; background: #f5f5f5; padding: 10px 18px; border-radius: 8px; font-size: 13px; cursor: pointer; }
+.pill.active { background: var(--orange); color: white; }
+
+    /* --- FOOTER --- */
+    .main-footer { background-color: #110704; padding: 80px 0 20px; color: white; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1.2fr 1.3fr; gap: 50px; margin-bottom: 60px; }
+    .f-tagline { color: var(--gold); font-size: 11px; text-transform: uppercase; margin: 10px 0 20px; display: block; }
+    .f-col h4 { color: var(--gold); margin-bottom: 25px; font-size: 18px; }
+    .f-col ul { list-style: none; }
+    .f-col li { margin-bottom: 12px; font-size: 14px; opacity: 0.7; }
+    .f-col a { color: white; text-decoration: none; transition: 0.3s; }
+    .socials { display: flex; gap: 15px; margin-top: 25px; }
+    .socials a { background: rgba(255,255,255,0.05); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+    .c-item { margin-bottom: 20px; font-size: 13px; text-align: left; }
+    .c-item i { color: var(--orange); margin-right: 10px; }
+    .c-item span { color: var(--gold); font-weight: 600; }
+
+    .branches-footer { border-top: 1px solid rgba(255,255,255,0.05); padding: 50px 0; }
+    .title-branches { text-align: center; color: var(--gold); margin-bottom: 30px; font-size: 18px; }
+    .bf-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .bf-card { background: rgba(255,255,255,0.03); padding: 25px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); text-align: left; }
+    .bf-card h5 { color: var(--gold); margin-bottom: 12px; font-size: 15px; }
+    .bf-card p { font-size: 12px; opacity: 0.6; margin-bottom: 5px; }
+
+    .newsletter-section { padding-bottom: 50px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 50px; }
+    .news-form { display: flex; justify-content: center; margin-top: 25px; }
+    .news-form input { padding: 14px 20px; width: 380px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px 0 0 10px; color: white; }
+    .news-form button { background: var(--orange); color: white; padding: 14px 30px; border: none; border-radius: 0 10px 10px 0; font-weight: 600; cursor: pointer; }
+
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.05); padding-top: 30px; font-size: 13px; opacity: 0.5; }
+    .b-flex { display: flex; justify-content: space-between; align-items: center; }
+    .legal a { margin-left: 20px; color: white; text-decoration: none; }
+    /* Container utama newsletter */
+.newsletter-section { 
+    padding: 60px 0; 
+    border-top: 1px solid rgba(255,255,255,0.05); 
+    text-align: center; /* Mengetengahkan H4 dan P */
+}
+
+.newsletter-section h4 {
+    margin-bottom: 10px;
+    color: var(--gold);
+    font-size: 18px;
+}
+
+.newsletter-section p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    max-width: 600px; /* Membatasi lebar agar teks tidak terlalu panjang ke samping */
+    margin: 0 auto 25px; /* auto di kiri-kanan membuat elemen p berada di tengah */
+}
+
+/* Form agar tetap rapi di bawah teks */
+.news-form { 
+    display: flex; 
+    justify-content: center; 
+    align-items: stretch; /* Memastikan tinggi input dan button sama */
+}
+
+.news-form input { 
+    padding: 14px 20px; 
+    width: 380px; 
+    background: rgba(255,255,255,0.05); 
+    border: 1px solid rgba(255,255,255,0.1); 
+    border-radius: 10px 0 0 10px; 
+    color: white; 
+    outline: none;
+}
+
+.news-form button { 
+    background: var(--orange); 
+    color: white; 
+    padding: 0 30px; 
+    border: none; 
+    border-radius: 0 10px 10px 0; 
+    font-weight: 600; 
+    cursor: pointer; 
+    transition: 0.3s;
+}
+
+.news-form button:hover {
+    background: #d45b0d;
+}
+/* MODALS */
+.modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); display: none; align-items: center; justify-content: center; z-index: 2000; }
+.modal-box { background: white; width: 480px; padding: 40px; border-radius: 20px; color: #333; position: relative; }
+.close-btn { position: absolute; top: 20px; right: 20px; font-size: 24px; cursor: pointer; color: #999; }
+.f-group { margin-bottom: 15px; text-align: left; }
+.f-group label { display: block; font-size: 13px; font-weight: 600 !important; margin-bottom: 5px; }
+.f-group input, .f-group select { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; }
+.btn-orange-submit { background: var(--orange); color: white; width: 100%; padding: 15px; border-radius: 12px; border: none; font-weight: 600 !important; cursor: pointer; }
+/* Tampilan Container Tag Menu */
+.selected-menu-display {
+    border: 1px dashed #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    min-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #fdfdfd;
+}
+
+.placeholder-text {
+    font-size: 12px;
+    color: #999;
+    font-style: italic;
+}
+
+/* Style Tag / Pill Menu */
+.menu-tag {
+    background-color: var(--orange);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    animation: popIn 0.3s ease;
+}
+
+.menu-tag i {
+    cursor: pointer;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.menu-tag i:hover { opacity: 1; }
+
+@keyframes popIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}/* Styling Area Catatan */
+#cust-note {
+    width: 100%;
+    min-height: 110px; /* Tinggi default yang pas */
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px; /* Melengkung halus seperti input lain */
+    background: #fdfdfd;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.6;
+    resize: vertical; /* User hanya bisa tarik ke bawah, tidak ke samping agar layout tidak rusak */
+    outline: none;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+/* Efek saat box catatan diklik/fokus */
+#cust-note:focus {
+    border-color: var(--orange);
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(243, 106, 16, 0.1); /* Glow tipis oranye */
+}
+
+/* Styling Placeholder */
+#cust-note::placeholder {
+    color: #bbb;
+    font-size: 13px;
+}
+
+/* Memastikan label punya icon jarak */
+.f-group label i {
+    margin-right: 5px;
+    color: var(--orange);
+}
